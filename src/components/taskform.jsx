@@ -12,7 +12,7 @@ const TaskForm = ({ onAddTask }) => {
   };
 
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center">
+    <Grid container direction="row" justifyContent="space-between" alignItems="center">
       <Grid item xs={10} sm={8}>
         <TextField
           label="Enter task name"
@@ -23,6 +23,7 @@ const TaskForm = ({ onAddTask }) => {
           margin="normal"
         />
       </Grid>
+      
       <Grid item xs={2} sm={1}>
         <Button variant="contained" color="primary" size='small' margin="normal" onClick={handleAddTask}>
           Add Task
